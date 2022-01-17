@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 8px;
+  width: 90%;
+  max-width: 720px;
+
+  min-height: 100vh;
+  background-color: #fff;
+}
