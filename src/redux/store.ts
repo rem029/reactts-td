@@ -4,7 +4,7 @@ import thunk from "redux-thunk";
 
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
-import listReducer from "./listSlice";
+import listReducer from "./slices/list";
 
 const store = configureStore({
   reducer: { list: listReducer },
@@ -16,7 +16,6 @@ const store = configureStore({
 });
 
 export type RootState = ReturnType<typeof store.getState>;
-
 export type AppDispatch = typeof store.dispatch;
 
 export const useAppDispatch = () => useDispatch<AppDispatch>();

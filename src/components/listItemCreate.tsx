@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Item, DefaultProps } from "../types";
 
-import { addItem, getListItems } from "../redux/listSlice";
+import { addItem, getListItems } from "../redux/slices/list";
 import { useAppSelector, useAppDispatch } from "../redux/store";
 
 import "./listItemCreate.scss";
